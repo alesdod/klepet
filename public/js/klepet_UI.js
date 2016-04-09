@@ -116,8 +116,8 @@ socket.on('uporabniki', function(uporabniki) {
     }
     
     $('#seznam-uporabnikov div').click(function() {
-      klepetApp.procesirajUkaz('/zasebno ' + $(this).text());
-      //$('#poslji-sporocilo').append("lala");
+    //  klepetApp.procesirajUkaz('/zasebno ' + $(this).text());
+      $('#poslji-sporocilo').val('/zasebno ' + $(this).text());
       $('#poslji-sporocilo').focus();
     });
   });
