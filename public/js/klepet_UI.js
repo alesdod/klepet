@@ -122,6 +122,16 @@ socket.on('uporabniki', function(uporabniki) {
     });
   });
 
+/*
+$(function() {
+    $("#seznam-uporabnikov div").hover(
+    function() {
+        $(this).css('background-color', '#ff0')
+    }, function() {
+        $(this).css('background-color', '')
+    });
+});*/
+
   setInterval(function() {
     socket.emit('kanali');
     socket.emit('uporabniki', {kanal: trenutniKanal});
